@@ -26,7 +26,7 @@ class AuthenticationService {
 
     public function getUserToken($user) {
         //call repository to get user roles
-        $roles = $user == 'admin' ? ['ADMIN','USER_RW', 'USER_R'] :['USER_R'];
+        $roles = $user == 'admin' ? ['USER_W'] :['USER_R'];
         $token = $this->generateToken();
         $userInfo = [
             'username' => $user,
