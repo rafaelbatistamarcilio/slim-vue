@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <base href="/">
+    
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/vue-material/dist/vue-material.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/vue-material/dist/theme/default.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <title>Login</title>
+</head>
+
+<body>
+    <div id="app" >
+        <App />
+    </div>
+
+    <!-- VENDOR -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pubsub-js/1.7.0/pubsub.min.js" integrity="sha256-QF0bsKIv/J8eC1vj+f/xSmLSME+ztgCsUVYSR6hdHjE=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://unpkg.com/vue-router@2.0.0/dist/vue-router.js"></script>
+    <script src="https://unpkg.com/vue-material"></script>
+
+    <!-- APP -->
+    <script src="/public/main.js" type="module"></script>
+    <script nomodule> document.getElementById('app').innerText = 'Browser not supported' </script>
+</body>
+</html>
